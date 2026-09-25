@@ -1,0 +1,29 @@
+From 4401e68be9a4285416af4b47ac321efbf34d78ec Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Sat, 26 Sep 2026 00:49:24 +0300
+Subject: [PATCH] Fix the missing release tag
+
+Fix the missing release version information
+
+Signed-off-by: Sabri Ünal <yakushabb@gmail.com>
+---
+ metainfo/io.github.shundhammer.qdirstat.metainfo.xml | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/metainfo/io.github.shundhammer.qdirstat.metainfo.xml b/metainfo/io.github.shundhammer.qdirstat.metainfo.xml
+index a30d096..7740453 100644
+--- a/metainfo/io.github.shundhammer.qdirstat.metainfo.xml
++++ b/metainfo/io.github.shundhammer.qdirstat.metainfo.xml
+@@ -19,6 +19,9 @@
+     </screenshot>
+   </screenshots>
+   <releases>
++    <release version="2.0" date="2026-01-18" type="stable">
++      <url>https://github.com/shundhammer/qdirstat/releases/tag/2.0</url>
++    </release>
+     <release version="1.9" date="2024-01-14" type="stable">
+       <url>https://github.com/shundhammer/qdirstat/releases/tag/1.9</url>
+     </release>
+--
+libgit2 1.9.7
+
