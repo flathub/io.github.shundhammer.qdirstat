@@ -20,12 +20,12 @@ modules:
     config-opts:
       - INSTALL_PREFIX=/app
     post-install:
-      - install -Dm644 metainfo/io.github.shundhammer.qdirstat.metainfo.xml -t /app/share/metainfo/
+      - install -Dm644 package/flatpak/metainfo/${FLATPAK_ID}.metainfo.xml -t /app/share/metainfo/
     sources:
       - type: git
         url: https://github.com/shundhammer/qdirstat.git
-        tag: '2.0'
-        commit: 26aa35a57371744be993fab5d34ac096dcb62cbc
+        tag: '2.0.1'
+        commit: fe83726c7b7c17e0ee0c1b926b0b348a3fed86c9
         x-checker-data:
           type: git
           tag-pattern: ^([\d.]+)$
